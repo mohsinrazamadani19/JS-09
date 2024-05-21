@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var jsLiterl = [];
+        // var stringArray = ['Hello', 'World', 'Javascript']
+                                    // var numArray = [2,23,10,6,10,8,90]
+                                    // var boleanArray = [true, false, true, false]
+                                    // var mixArray = ['karachi', 12, true, 'lahore', 90]
+                                    // var educArray = ['SSC','HSC', 'BCS','BS', 'BCOM','MS','M.phil','PhD']
+                                    // var stuName = ['Mohsin','Raza','Hassan']
+                                    // var stuNum = [450, 400, 350]
+
+                                
+
+        // for (var i = 0; i <= stuName.length; i++ ){
+        //          document.write(`<br> score of  ${stuName[i]} is ${stuNum[i]} and percentage is ${(stuNum[i] / 500) * 100 }%`)
+        // }
+        //  document.write(res)
+
+        var colorNames = ['orange', 'Blue', 'Green', 'Yellow <br>']
+       
+
+         var res =  colorNames.splice( 1, 1)
+
+         document.write(colorNames)
+
+
+         var score = [320, 400, 200, 110, 299, 50]
+         document.write ( `<br>Scores of Students is ${score}`)
+         score.sort();
+         document.write(`<br>Ordered Scrores of Students is ${score}`)
+
+
+         var citiesList = ['Karachi', 'islamabad', 'Lahore', 'Heydarabad', 'Nawabshah']
+         
+        document.write(`<br> <br> Cities List : <br> ${citiesList}`)
+
+     var listCopied = citiesList.slice (2, 5)
+
+
+     document.write(`<br> Selected List is Here  ${listCopied} <br> <br>`)
+
+
+     var join1 = ['This', 'is', 'my', 'cat']
+     var join2 = join1.join('  ')
+
+
+     document.write(join1, "<br>")
+     document.write(join2, "<br>")
+
+
+     var con = ['']
+     var devices = ['Mouse', 'Keyboard', 'Lcd', 'Pc','Speaker']
+     var con1 = con.concat(devices)
+     var out = con1.join('<br> Out: <br>')
+     var out1 = con1.reverse('<br> Out: <br>')
+     var out2 = out1.join('<br> Out: <br>') 
+
+
+
+     document.write(` <br> devices : ${devices} `)
+     document.write(out , '<br>')
+
+     document.write(` <br> devices : ${devices} `)
+     document.write('<br>', out2 , '<br>')
+
+
+
+     var mobile = ['apple', 'samsung', 'nokia', 'motorolla']
+    
+
+       
+        document.write('<select>')
+     for (var i = 0; i <= mobile.length; i++){
+          
+        document.write("<option value='" + mobile[i] +  "'> " + mobile[i] + "</option>");
+
+    }
+
+      
+        document.write('</select>')
+     
+
+
+
+
+
+
+ 
+    </script>
+
+
+
+</body>
+</html>
